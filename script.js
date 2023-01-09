@@ -152,6 +152,10 @@ var wantedCharacters = [];
     wantedCharacters = wantedCharacters.concat(specialCharacters)
   }
 console.log(wantedCharacters);
+
+//loop and add to a password variable 
+var randomCharacters = getRandomElement(wantedCharacters);
+//return password variable
   // alert("called this function etc etc");
   // return "this is a password"
 }
