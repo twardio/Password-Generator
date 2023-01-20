@@ -94,7 +94,7 @@ var upperCasedCharacters = [
 // 1 Ask the user how many characters they want, and error message them if they go outside <10 or >60
 function passwordLength() {
   var length = prompt("Please enter the desired length of your password (minimum 10 characters):");
-
+console.log(length);
   if (isNaN(length)) {
     alert("Error: password length must be a number. Please try again.");
     passwordLength();
@@ -107,6 +107,7 @@ function passwordLength() {
   } else {
       return length
   }
+  
 }
 
 //---------------------------------------------------------------
@@ -115,15 +116,6 @@ function passwordLength() {
 function getRandomElement(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
-
-
-
-//works to get random element when function is called 
-// var randomSpecialCharacter = getRandomElement(specialCharacters);
-// var randomNumericCharacter = getRandomElement(numericCharacters);
-// var randomLowerCasedCharacter = getRandomElement(lowerCasedCharacters);
-// var randomUpperCasedCharacter = getRandomElement(upperCasedCharacters);
-
 
 
 // Function to generate password with user input
@@ -152,15 +144,20 @@ var wantedCharacters = [];
     wantedCharacters = wantedCharacters.concat(specialCharacters)
   }
 console.log(wantedCharacters);
-
-//loop and add to a password variable 
-var randomCharacters = getRandomElement(wantedCharacters);
-//return password variable
-  // alert("called this function etc etc");
-  // return "this is a password"
 }
+//loop and add to a password variable 
 
-generatePassword()
+// var randomCharacters = getRandomElement(wantedCharacters) 
+
+// // generate password
+// function generatePassword() {
+  
+//   let password = '';
+//   for (var i = 0; i < length; i++) {
+//     password += randomCharacters;
+//   }
+//   return password;
+// }
 
 
 // Get references to the #generate element
