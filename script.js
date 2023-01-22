@@ -147,17 +147,17 @@ console.log(wantedCharacters);
 }
 //loop and add to a password variable 
 
-// var randomCharacters = getRandomElement(wantedCharacters) 
+var randomCharacters = getRandomElement(wantedCharacters) 
 
 // // generate password
-// function generatePassword() {
+function generatePassword() {
   
-//   let password = '';
-//   for (var i = 0; i < length; i++) {
-//     password += randomCharacters;
-//   }
-//   return password;
-// }
+  var password = '';
+  for (var i = 0; i < length; i++) {
+    password += randomCharacters;
+  }
+  return password;
+};
 
 
 // Get references to the #generate element
