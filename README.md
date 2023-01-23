@@ -16,7 +16,7 @@ N/A
 
 ## Usage
 
-This repository contains a financial analysis of data, done in javascript
+This repository contains a password generator.
 
 ## License
 
